@@ -62,5 +62,5 @@ To prepare commit changes:
 -m for message
 git commit -m "Your message here"
 
-To send commited changes to the repository:
-git push origin master
+To send commited changes to the repository (use main or master):
+git push origin main
