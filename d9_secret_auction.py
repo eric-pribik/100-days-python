@@ -178,6 +178,3 @@ while continue_bidding:
         find_highest_bidder(bids)
     elif should_continue == "yes":
         print("\n" * 20)
-
-eric.pribik@gmail.com
-gybfyv-furvuC-3cyhjy
