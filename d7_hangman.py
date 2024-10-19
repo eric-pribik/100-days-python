@@ -19,63 +19,63 @@
 #TODO-7 Change the for loop so that you keep the previous correct 
 
 
-#import random
-#import string
+import random
+import string
+
+
+word_list = ["aardvark", "baboon", "camel"]
+chosen_word = random.choice(word_list)
+chosen_word_list = list(chosen_word)
+chosen_word_lenght = len(chosen_word)
+placeholder = ""
+display = ""
+lives = 6
+
+print(chosen_word)
+
+
+for i in range(chosen_word_lenght):
+   placeholder += "_"
+
+display = placeholder
 #
-#
-#word_list = ["aardvark", "baboon", "camel"]
-#chosen_word = random.choice(word_list)
-#chosen_word_list = list(chosen_word)
-#chosen_word_lenght = len(chosen_word)
-#placeholder = ""
-#display = ""
-#lives = 6
-#
-#print(chosen_word)
-#
-#
-#for i in range(chosen_word_lenght):
-#    placeholder += "_"
-#
-#display = placeholder
-##
-##print(placeholder)
-##guess = input("Guess a Letter: ").lower()
-#
-#
-##for letter in chosen_word:
-##    if letter == guess:
-##        display += letter
-##    else:
-##        display += "_"
-#
-#matched_letters_list = []
-#new_display = ""
-#
-#game_over = False
-#
-#while not game_over:
-#    print(display)
-#    guess = input("Guess a Letter: ").lower()
-#    for letter in chosen_word:
-#        if letter == guess:
-#            matched_letters_list.append(guess)
-#        elif "_" in display == False:
-#            print("You Won!")    
-#
-#print(f"You lost! The word was {chosen_word}")
-#print(placeholder)
-#print("1")
-#print(display)
-#print("2")
-#print(new_display)
-#print("3")
-#print(matched_letters_list)
-#    print(f"You loose a life! your total lives remaining are {lives}.\n{display}")
-#        lives -= 1
-#    print(display)
-#
-#
+print(placeholder)
+guess = input("Guess a Letter: ").lower()
+
+
+#for letter in chosen_word:
+   if letter == guess:
+       display += letter
+   else:
+       display += "_"
+
+matched_letters_list = []
+new_display = ""
+
+game_over = False
+
+while not game_over:
+   print(display)
+   guess = input("Guess a Letter: ").lower()
+   for letter in chosen_word:
+       if letter == guess:
+           matched_letters_list.append(guess)
+       elif "_" in display == False:
+           print("You Won!")    
+
+print(f"You lost! The word was {chosen_word}")
+print(placeholder)
+print("1")
+print(display)
+print("2")
+print(new_display)
+print("3")
+print(matched_letters_list)
+   print(f"You loose a life! your total lives remaining are {lives}.\n{display}")
+       lives -= 1
+   print(display)
+
+
 #######################################################################################################
 #                                   Final Project (Solution)
 #######################################################################################################
